@@ -1,0 +1,359 @@
+/*
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  list-style: none;
+  background-color: #f7e296;
+}
+
+.user-navigation a, a.button-logout {
+  font-size: 15px;
+  color: #000000;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  opacity: 0.6;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.button-logout {
+  opacity: 0.3;
+}
+
+.button-logout:hover {
+  opacity: 0.6;
+}
+
+.logo-icon:hover {
+  opacity: 0.6;
+}
+
+.logo-icon:active {
+  opacity: 0.3;
+}
+
+.search-line {
+  opacity: 0.3;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-line:hover {
+  opacity: 0.6;
+}
+
+.account a:hover,
+.compare a:hover,
+.cart a:hover {
+  opacity: 0.6;
+}
+
+.account a:active,
+.compare a:active,
+.cart a:active {
+  opacity: 0.3;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+
+  margin-right: 18px;
+  margin-left: 18px;
+
+  background-image: url("../img/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.account-icon, .account-icon-footer {
+  width: 13px;
+  height: 12px;
+
+  margin-right: 12px;
+  margin-left: 12px;
+
+  background-image: url("../img/account-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.account-icon-footer {
+  background-image: url("../img/account-icon-footer.svg");
+}
+
+
+.compare-icon, .compare-icon-footer {
+  width: 10px;
+  height: 10px;
+
+  margin-right: 12px;
+  margin-left: 12px;
+
+  background-image: url("../img/compare-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.compare-icon-footer {
+  background-image: url("../img/compare-icon-footer.svg");
+}
+
+.cart-icon, .cart-icon-footer {
+  width: 12px;
+  height: 12px;
+
+  margin-right: 12px;
+  margin-left: 12px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.cart-icon-footer {
+  background-image: url("../img/cart-icon-footer.svg");
+}
+
+
+.site-navigation, .sub-menu {
+  list-style: none;
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+}
+
+.site-navigation a {
+  text-transform: uppercase;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #000000;
+}
+
+.nav-button-extend {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  opacity: 0.3;
+}
+
+.info h2, .contacts h2, .modal-feedback h2 {
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800px;
+  letter-spacing: 4px;
+}
+
+.partners-item {
+  font-size: 16px;
+  font-family: "Gilroy Extra Bold", "Open Sans", sans-serif;
+  line-height: 40px;
+  color: #000000;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-navigation .user-navigation a {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 30px;
+  letter-spacing: 2px;
+
+  opacity: 0.7;
+}
+
+.footer-navigation .user-navigation a:hover {
+  opacity: 1;
+}
+
+.footer-navigation .user-navigation a:active {
+  opacity: 0.3;
+}
+
+.footer-navigation .site-navigation a {
+  text-transform: uppercase;
+  ont-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #ffffff;
+
+}
+
+.footer-navigation .site-navigation a:hover {
+  opacity: 0,7;
+}
+
+.footer-navigation .site-navigation a:active {
+  opacity: 0,3;
+}
+
+.social-button {
+  width: 32px;
+  height: 32px;
+
+  margin: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+
+  opacity: 0.3;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
+.social-button-fb {
+  background-image: url("../img/social-button-fb.svg");
+}
+
+.social-button-inst {
+  background-image: url("../img/social-button-inst.svg");
+}
+
+.social-button-tw {
+  background-image: url("../img/social-button-tw.svg");
+}
+
+.button, button.modal-map {
+  width: 260px;
+
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  box-sizing: border-box;
+
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: 5px;
+
+  background-image: url("../img/bar-yellow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-feedback .button, .filters .button {
+  width: 260px;
+
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  border: none;
+  background-color: transparent;
+
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: 5px;
+
+  background-image: url("../img/bar-yellow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+}
+
+.button:hover, button:hover {
+  background-color: #f0c52e;
+  background-size: auto;
+  background-image: none;
+}
+
+.button:active, button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  opacity: 0.5;
+}
