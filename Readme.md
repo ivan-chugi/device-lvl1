@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ivan Chugunov](https://up.htmlacademy.ru/htmlcss/23/user/603625).
-* Наставник: [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako).
+* Наставник: [Елена Морозова](https://htmlacademy.ru/profile/id561659).
 
 ---
 
