@@ -2,66 +2,60 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Device</title>
   </head>
 
   <body>
-      <header class="main-header">
-        <nav class="main-navigation">
-            <a class="logo-icon" href="index.html">
-              <img src="img/logo-icon.svg" width="164" height="35" alt="Device">
-            </a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="logo-icon" href="index.html">
+          <img src="img/logo-icon.svg" width="164" height="35" alt="Интернет-магазин гаджетов Device">
+        </a>
 
-            <div class="user-navigation">
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <span class="search-icon"></span>
-                <label class="visually-hidden" for="search">Поиск по сайту</label>
-                <input class="search-line" type="search" name="search" placeholder="Поиск по сайту" id="search">
-              </form>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search-line" type="search" name="search" placeholder="Поиск по сайту" id="search">
+        </form>
+        <ul class="user-navigation">
+          <li class="account">
+            <a class="username account-icon" href="#">Валентин Петухов</a>
+            <a class="button-logout" href="#">Выйти</a>
+          </li>
+          <li class="compare">
+            <a class="compare-icon" href="#">Сравнить</a>
+          </li>
+          <li class="cart">
+            <a class="cart-icon" href="#">Корзина</a>
+          </li>
+        </ul>
 
-              <div class="account">
-                <a href="#"><span class="account-icon"></span>Войти</a>
-                <a class="username" href="#">Валентин Петухов</a>
-                <a class="button-logout" href="#">Выйти</a>
-              </div>
-              <div class="compare">
-                <a href="#"><span class="compare-icon"></span>Сравнить</a>
-              </div>
-              <div class="cart">
-                <a href="#"><span class="cart-icon"></span>Корзина</a>
-              </div>
-            </div>
-
-          <div class="site-navigation-wrapper">
-              <ul class="site-navigation">
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Каталог товаров</a>
-                  <span class="nav-button-extend"></span>
-                  <ul class="sub-menu">
-                    <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
-                    <li><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
-                    <li><a class="catalog-link" href="#">Экшн-камеры</a></li>
-                    <li><a class="catalog-link" href="#">Фитнес-браслеты</a></li>
-                    <li><a class="catalog-link" href="#">Умные часы</a></li>
-                    <li><a class="catalog-link" href="#">Квадрокоптеры</a></li>
-                  </ul>
-              </li>
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="site-navigation-link">
-                  <a class="site-navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="site-navigation-link">
-                  <a class="site-navigation-link" href="#">Контакты</a>
-              </li>
+        <div class="site-navigation-wrapper">
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+            <a class="site-navigation-link catalog" href="#">Каталог товаров</a>
+            <ul class="sub-menu">
+              <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
+              <li><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
+              <li><a class="catalog-link" href="#">Экшн-камеры</a></li>
+              <li><a class="catalog-link" href="#">Фитнес-браслеты</a></li>
+              <li><a class="catalog-link" href="#">Умные часы</a></li>
+              <li><a class="catalog-link" href="#">Квадрокоптеры</a></li>
             </ul>
-          </div>
-        </nav>
-
+            </li>
+            <li class="site-navigation-item">
+                <a class="site-navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="container">
@@ -69,7 +63,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи<a href="#"></a></li>
+        <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -90,9 +84,9 @@
           <fieldset>
             <legend>Bluetooth</legend>
             <label for="yes">Есть</label>
-            <input type="radio" name="yes" id="yes" checked>
+            <input type="radio" name="bluetooth" id="yes" checked>
             <label for="no">Нет</label>
-            <input type="radio" name="no" id="no">
+            <input type="radio" name="bluetooth" id="no">
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
@@ -123,54 +117,58 @@
           </li>
           <li class="catalog-item">
             <h3>
-              <a href="#">Селфи-палка "Следуй за мной"</a>
+              <a href="#">Селфи-палка «Следуй за мной»</a>
             </h3>
             <span class="price">500 руб.</span>
-            <img src="img/item-4.jpg" width="360" height="380" alt="Следуй за мной">
+            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           </li>
         </ul>
       </section>
-
     </main>
 
     <footer class="main-footer">
-        <nav class="footer-navigation">
-          <div class="user-navigation">
-            <div class="account">
-              <a class="username" href="#"><span class="account-icon-footer"></span>Валентин Петухов</a>
-              <a class="button-logout" href="#">Выйти</a>
-            </div>
-            <div class="compare">
-              <a href="#"><span class="compare-icon-footer"></span>Сравнить</a>
-            </div>
-            <div class="cart">
-              <a href="#"><span class="cart-icon-footer"></span>Корзина</a>
-            </div>
-          </div>
+      <a class="logo-icon" href="index.html">
+        <img src="img/logo-icon-footer.svg" width="164" height="35" alt="Интернет-магазин гаджетов Device">
+      </a>
+      <p class="adress">г. Москва, ул. Строителей, 15</p>
 
-          <ul class="site-navigation">
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Контакты</a>
-              </li>
-          </ul>
-        </nav>
-        <div class="footer-social">
-          <ul class="social netwosrk list">
-            <li><a class="social-button social-button-fb" href="#">Facebook</a></li>
-            <li><a class="social-button social-button-inst" href="#">Instagram</a></li>
-            <li><a class="social-button social-button-tw" href="#">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="footer telephone">
-          <p>Тел.: +7 (495) 495-95-95</p>
-        </div>
-        <span class="html-academy-logo"><a href="https://htmlacademy.ru/"></a></span>
+      <nav class="footer-navigation">
+        <ul class="user-navigation-footer">
+          <li class="account">
+            <a class="username account-icon-footer" href="#">Валентин Петухов</a>
+            <a class="button-logout" href="#">Выйти</a>
+          </li>
+          <li class="compare">
+            <a class="compare-icon-footer" href="#">Сравнить</a>
+          </li>
+          <li class="cart">
+            <a class="cart-icon-footer" href="#">Корзина</a>
+          </li>
+        </ul>
+
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <ul class="social-network-list">
+          <li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button social-button-inst" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-button social-button-tw" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
+      </div>
+      <p class="telephone">Тел.: +7 (495) 495-95-95</p>
+      <a class="html-academy-logo" href="https://htmlacademy.ru/">
+        <img src="img/html-academy-logo.svg" width="27" height="35" alt="Интернет-магазин гаджетов Device">
+      </a>
     </footer>
   </body>
 </html>

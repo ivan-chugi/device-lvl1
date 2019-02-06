@@ -2,42 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
     <title>Device</title>
   </head>
 
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-          <a class="logo-icon" href="index.html">
-            <img src="img/logo-icon.svg" width="164" height="35" alt="Device">
-          </a>
+        <a class="logo-icon" href="index.html">
+          <img src="img/logo-icon.svg" width="164" height="35" alt="Интернет-магазин гаджетов Device">
+        </a>
 
-          <div class="user-navigation">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <span class="search-icon"></span>
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input class="search-line" type="search" name="search" placeholder="Поиск по сайту" id="search">
-            </form>
-
-            <div class="account">
-              <a href="#"><span class="account-icon"></span>Войти</a>
-            </div>
-            <div class="compare">
-              <a href="#"><span class="compare-icon"></span>Сравнить</a>
-            </div>
-            <div class="cart">
-              <a href="#"><span class="cart-icon"></span>Корзина</a>
-            </div>
-          </div>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search-line" type="search" name="search" placeholder="Поиск по сайту" id="search">
+        </form>
+        <ul class="user-navigation">
+          <li class="account">
+            <a class="account-icon" href="#">Войти</a>
+          </li>
+          <li class="compare">
+            <a class="compare-icon" href="#">Сравнить</a>
+          </li>
+          <li class="cart">
+            <a class="cart-icon" href="#">Корзина</a>
+          </li>
+        </ul>
 
         <div class="site-navigation-wrapper">
-            <ul class="site-navigation">
+          <ul class="site-navigation">
             <li class="site-navigation-item">
-                <a class="site-navigation-link" href="#">Каталог товаров</a>
-                <span class="nav-button nav-button-extend"></span>
+                <a class="site-navigation-link catalog" href="#">Каталог товаров</a>
                 <ul class="sub-menu">
                   <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
                   <li><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
@@ -50,11 +46,11 @@
             <li class="site-navigation-item">
                 <a class="site-navigation-link" href="#">Доставка</a>
             </li>
-            <li class="site-navigation-link">
+            <li class="ssite-navigation-item">
                 <a class="site-navigation-link" href="#">Гарантия</a>
             </li>
-            <li class="site-navigation-link">
-                <a class="site-navigation-link" href="#">Контакты</a>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -63,13 +59,13 @@
 
     <main class="container">
       <h1 class="visually-hidden">Интернет магазин Device</h1>
-      <!-- Секция слайдов -->
-      <!-- Секция популярное -->
-      <!-- Секция сервисы -->
-      <!-- Секция лого производителей -->
+      <section class="slides"></section>
+      <section class="popular"></section>
+      <section class="services"></section>
+      <section class="brands"></section>
       <section class="info">
         <span class="bar-white"></span>
-        <h2>О нас</h2>
+        <h2 class="header-with-bar">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="partners">
@@ -82,70 +78,73 @@
 
       <section class="contacts">
         <span class="section-line"></span>
-        <h2>Контакты</h2>
+        <h2 class="header-with-bar">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <!-- Я надеюсь, это картинка, а не интерекативный элемент, тогда: -->
         <p><a class="index-map" href="#"><img src="img/index-map.jpg" width="560" height="222" alt="Карта"></a></p>
         <a class="button" href="#">Напишите нам</a>
       </section>
     </main>
 
     <footer class="main-footer">
-        <a class="logo-icon" href="index.html">
-          <img src="img/logo-icon-footer.svg" width="164" height="35" alt="Device">
-        </a>
-        <div class="footer adress">
-          <p>г. Москва, ул. Строителей, 15</p>
-        </div>
-        <span class="footer-line"></span>
+      <a class="logo-icon" href="index.html">
+        <img src="img/logo-icon-footer.svg" width="164" height="35" alt="Интернет-магазин гаджетов Device">
+      </a>
+      <p class="adress">г. Москва, ул. Строителей, 15</p>
 
-        <nav class="footer-navigation">
-          <div class="user-navigation">
-            <div class="account">
-              <a href="#"><span class="account-icon-footer"></span>Войти</a>
-            </div>
-            <div class="compare">
-              <a href="#"><span class="compare-icon-footer"></span>Сравнить</a>
-            </div>
-            <div class="cart">
-              <a href="#"><span class="cart-icon-footer"></span>Корзина</a>
-            </div>
-          </div>
+      <nav class="footer-navigation">
+        <ul class="user-navigation-footer">
+          <li class="account">
+            <a class="account-icon-footer" href="#">Войти</a>
+          </li>
+          <li class="compare">
+            <a class="compare-icon-footer" href="#">Сравнить</a>
+          </li>
+          <li class="cart">
+            <a class="cart-icon-footer" href="#">Корзина</a>
+          </li>
+        </ul>
 
-          <ul class="site-navigation">
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="site-navigation-item">
-                  <a class="site-navigation-link" href="#">Контакты</a>
-              </li>
-          </ul>
-        </nav>
-        <div class="footer-social">
-          <ul class="social netwosrk list">
-            <li><a class="social-button social-button-fb" href="#">Facebook</a></li>
-            <li><a class="social-button social-button-inst" href="#">Instagram</a></li>
-            <li><a class="social-button social-button-tw" href="#">Twitter</a></li>
-          </ul>
-        </div>
-        <div class="footer telephone">
-          <p>Тел.: +7 (495) 495-95-95</p>
-        </div>
-        <span class="html-academy-logo"><a href="https://htmlacademy.ru/"></a></span>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <ul class="social-network-list">
+          <li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button social-button-inst" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-button social-button-tw" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
+      </div>
+      <p class="telephone">Тел.: +7 (495) 495-95-95</p>
+      <a class="html-academy-logo" href="https://htmlacademy.ru/">
+        <img src="img/html-academy-logo.svg" width="27" height="35" alt="Интернет-магазин гаджетов Device">
+      </a>
     </footer>
 
     <section class="modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" id="name">
-        <label for="email">Ваш e-mail</label>
-        <input type="email" name="email" placeholder="email@example.com" id="email">
-        <label for="comment">Текст письма:</label>
-        <textarea name="comment" rows="8" cols="80" id="comment" placeholder="В свободной форме"></textarea>
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="name">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail</label>
+          <input type="email" name="email" placeholder="email@example.com" id="email">
+        </p>
+        <p>
+          <label for="comment">Текст письма:</label>
+          <textarea name="comment" rows="8" cols="80" id="comment" placeholder="В свободной форме"></textarea>
+        </p>
+
         <button class="button" type="submit">Отправить</button>
       </form>
       <span class="modal-close">Закрыть всплывающее окно</span>
@@ -154,8 +153,9 @@
     <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/modal-map.jpg" alt="г. Москва, ул. Строителей, 15">
-      <button type="button" name="button"></button>
-      <span class="modal-close">Закрыть всплывающее окно</span>
+      <button type="button" name="button">
+        <span class="modal-close">Закрыть всплывающее окно</span>
+      </button>
     </section>
 
   </body>
