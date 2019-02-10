@@ -1,32 +1,40 @@
-/*
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-*/
-
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2");
-  /* font-weight: 800; */
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2");
-  /* font-weight: 400; */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
@@ -36,7 +44,7 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 400;
   color: #464646;
 
   background-color: #ffffff;
@@ -50,7 +58,28 @@ a {
   background-color: #f7e296;
 }
 
-.user-navigation, .user-navigation-footer {
+.main-navigation::after {
+  content: "";
+  width: 130px;
+  height: 30px;
+  margin-right: 12px;
+  margin-left: 12px;
+
+  background-image: url("../img/bar-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.breadcrumbs,
+.user-navigation,
+.user-navigation-footer,
+.site-navigation,
+.sub-menu,
+.slide-switches,
+.catalog-list,
+.categories-list,
+.brands-list {
   list-style: none;
 }
 
@@ -85,7 +114,8 @@ a {
   opacity: 0.6;
 }
 
-.logo-icon:hover {
+.logo-icon:hover,
+.logo-icon:focus {
   opacity: 0.6;
 }
 
@@ -105,12 +135,6 @@ a {
   opacity: 0.6;
 }
 
-.account a:hover,
-.compare a:hover,
-.cart a:hover {
-  opacity: 0.6;
-}
-
 .account a:active,
 .compare a:active,
 .cart a:active {
@@ -122,6 +146,7 @@ a {
   border-style: solid; */
   display: inline-block;
   padding-left: 50px;
+
   background-image: url("../img/search-icon.svg");
   background-repeat: no-repeat;
   background-position: left;
@@ -142,7 +167,6 @@ a {
 
 .account-icon-footer::before {
   content: "";
-  content: "";
   width: 13px;
   height: 12px;
   margin-right: 12px;
@@ -153,7 +177,6 @@ a {
   background-position: center;
   display: inline-block;
 }
-
 
 .compare-icon::before {
   content: "";
@@ -218,26 +241,97 @@ a {
   opacity: 0.3;
 }
 
-.site-navigation, .sub-menu {
-  list-style: none;
+.site-navigation a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
-}
 
-.site-navigation a {
   text-transform: uppercase;
   line-height: 24px;
   font-size: 18px;
-  font-weight: normal;
   letter-spacing: 4px;
   color: #000000;
 }
 
-.info h2, .contacts h2, .modal-feedback h2 {
+.site-navigation-footer a {
+  color: #ffffff;
+}
+
+.sub-menu a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #464646;
+  text-transform: none;
+}
+
+/* .slide-switches {
+} */
+
+.container h2,
+.info h2,
+.contacts h2,
+.modal-feedback h2,
+.popular h3 {
   font-size: 47px;
+  font-family: "Gilroy", "Open Sans", sans-serif;
   line-height: 48px;
   font-weight: 800;
   letter-spacing: 4px;
+  color: #000000;
+}
+
+.slide-number {
+  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-size: 173.2px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.categories-item a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+
+  text-transform: none;
+  line-height: 24px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #000000;
+}
+
+.category {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 1);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.category-virtual {
+  background-image: url("../img/category-virtual.png");
+}
+
+.category-monopod {
+  background-image: url("../img/category-monopod.png");
+  background-position: bottom;
+}
+
+.category-actioncam {
+  background-image: url("../img/category-actioncam.png");
+}
+
+.category-bracelet {
+  background-image: url("../img/category-bracelet.png");
+}
+
+.category-watch {
+  background-image: url("../img/category-watch.png");
+}
+
+.category-copters {
+  background-image: url("../img/category-copters.png");
 }
 
 .partners-item {
@@ -251,7 +345,7 @@ a {
 .header-with-bar::before {
   content: "";
   width: 300px;
-  height: auto;
+  height: 60px;
 
   background-image: url("../img/bar-black.png");
   background-repeat: no-repeat;
@@ -274,7 +368,7 @@ a {
   background-color: #464646;
 }
 
-.footer-navigation, .user-navigation-footer a {
+.user-navigation-footer a {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -285,38 +379,25 @@ a {
   opacity: 0.7;
 }
 
-.footer-navigation .user-navigation a:hover {
+.user-navigation-footer a:hover {
   opacity: 1;
 }
 
-.footer-navigation .user-navigation a:active {
+.user-navigation-footer a:active {
   opacity: 0.3;
 }
 
-.footer-navigation .site-navigation a {
-  text-transform: uppercase;
-  ont-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
-  line-height: 24px;
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 4px;
-  color: #ffffff;
-
-}
-
-.footer-navigation .site-navigation a:hover {
+.site-navigation-footer a:hover {
   opacity: 0,7;
 }
 
-.footer-navigation .site-navigation a:active {
+.site-navigation-footer a:hover {
   opacity: 0,3;
 }
 
 .social-button {
   width: 32px;
   height: 32px;
-
   margin: 10px;
 
   background-repeat: no-repeat;
@@ -347,7 +428,16 @@ a {
   background-image: url("../img/social-button-tw.svg");
 }
 
-.button, button.modal-map {
+.html-academy-logo:hover,
+.html-academy-logo:focus {
+  opacity: 0.6;
+}
+
+.html-academy-logo:active {
+  opacity: 0.3;
+}
+
+.button {
   width: 260px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -355,7 +445,6 @@ a {
   text-align: center;
   vertical-align: middle;
   display: inline-block;
-
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -367,18 +456,16 @@ a {
   background-image: url("../img/bar-yellow.png");
   background-repeat: no-repeat;
   background-position: center;
+  outline: none;
 }
 
 .modal-feedback .button, .filters .button {
   width: 260px;
 
-  padding-left: auto;
-  padding-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 18px;
   text-align: center;
-  vertical-align: middle;
   display: block;
   border: none;
   background-color: transparent;
@@ -412,9 +499,13 @@ button:focus {
 .modal-close {
   width: 55px;
   height: 55px;
+  border: none;
+  background-color: transparent;
+
   background-image: url("../img/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
   opacity: 0.5;
+  outline: none;
 }
