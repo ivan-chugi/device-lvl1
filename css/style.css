@@ -299,39 +299,50 @@ a {
   color: #000000;
 }
 
-.category {
+.category::before {
+  content: "";
   display: block;
   width: 160px;
   height: 160px;
-  background-color: rgba(240, 197, 46, 1);
 
-  background-repeat: no-repeat;
+  background-color: rgba(240, 197, 46, 0.5);
   background-position: center;
+  background-repeat: no-repeat;
 }
 
-.category-virtual {
+.category-virtual::before {
   background-image: url("../img/category-virtual.png");
 }
 
-.category-monopod {
+.category-monopod::before {
   background-image: url("../img/category-monopod.png");
   background-position: bottom;
 }
 
-.category-actioncam {
+.category-actioncam::before {
   background-image: url("../img/category-actioncam.png");
 }
 
-.category-bracelet {
+.category-bracelet::before {
   background-image: url("../img/category-bracelet.png");
 }
 
-.category-watch {
+.category-watch::before {
   background-image: url("../img/category-watch.png");
 }
 
-.category-copters {
+.category-copters::before {
   background-image: url("../img/category-copters.png");
+}
+
+.category:hover::before,
+.category:focus::before, 
+.category:active::before {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.category-virtual:active::before {
+  opacity: 0.3;
 }
 
 .partners-item {
