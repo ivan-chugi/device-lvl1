@@ -26,6 +26,14 @@
   font-style: normal;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,6 +48,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -47,7 +56,7 @@ body {
   font-weight: 400;
   color: #464646;
 
-  background-color: #ffffff;
+  background-color: brown;
 }
 
 a {
@@ -75,7 +84,7 @@ a {
 .user-navigation,
 .user-navigation-footer,
 .site-navigation,
-.sub-menu,
+.sub-menu ul,
 .slide-switches,
 .catalog-list,
 .categories-list,
@@ -272,7 +281,7 @@ a {
 .info h2,
 .contacts h2,
 .modal-feedback h2,
-.popular h3 {
+.popular b {
   font-size: 47px;
   font-family: "Gilroy", "Open Sans", sans-serif;
   line-height: 48px;
@@ -292,6 +301,7 @@ a {
   position: relative;
   display: block;
   padding-top: 170px;
+  /* margin: 0; */
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -555,63 +565,24 @@ a {
   outline: none;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto
+}
+
 .main-navigation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  /* padding: 150px; */
-  background-color: #ffffff;
 }
 
-.flex-container {
+.user-interface,
+.site-navigation,
+.categories-list {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  min-width: 1160px;
-  margin: 0px;
-
-  background-color: rgba(240, 197, 46, 0.5);
-}
-
-.flex-container-row {
-  display: flex;
-  justify-content: flex-start;
   flex-direction: row;
-
-  max-width: 1160px;
-  align-items: stretch;
-  margin: 0px;
 }
 
-.site-navigation li,
-.user-navigation li {
-  display: inline-block;
-  margin-right: 110px;
-  /* flex-grow: 1; */
+.categories-list {
+  justify-content: space-between;
 }
-
-.sub-menu li {
-  display: block;
-}
-/* .logo-icon,
-.search-form,
-.user-navigation,
-.site-navigation {
-  border: 3px solid yellow;
-} */
-
-.flex-container-sub {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-
-  min-width: 600px;
-  align-items: stretch;
-  margin: 0px;
-}
-
-  .site-navigation-catalog {
-    margin-right: : 400px;
-  }
