@@ -862,7 +862,7 @@ a {
   font-size: 15px;
   color: #000000;
   line-height: 30px;
-  letter-spacing: none;
+  letter-spacing: normal;
 }
 
 .popular {
