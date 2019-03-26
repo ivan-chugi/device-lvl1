@@ -1675,6 +1675,28 @@ a {
   background-color: #f2f2f2;
 }
 
+.feedback-name:hover,
+.feedback-email:hover,
+.feedback-comment:hover {
+  background-color: #ebebeb;
+}
+
+.feedback-name:focus,
+.feedback-email:focus,
+.feedback-comment:focus,
+.feedback-name:active,
+.feedback-email:active,
+.feedback-comment:active {
+  background-color: #ffffff;
+  border: 3px #f8e297 solid;
+}
+
+feedback-name:invalid,
+.feedback-email:invalid {
+  background-color: #f6dad9;
+  border: none;
+}
+
 .modal-map {
   margin-left: 120px;
   margin-right: 120px;
@@ -1746,7 +1768,16 @@ a {
 }
 
 .breadcrumbs-item a {
-  opacity: 0.3;
+  color: #e7e7e7;
+}
+
+.breadcrumbs-item a:hover {
+  color: #b1b1b1;
+}
+
+.breadcrumbs-item a:active,
+.breadcrumbs-item a:focus {
+  color: #eeeeee;
 }
 
 .breadcrumbs-list {
@@ -2487,6 +2518,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.add-to-compare {
+  color: #a3a3a3;
+}
+
+.add-to-compare:hover {
+  color: #010101;
+}
+
+.add-to-compare:focus,
+.add-to-compare:active {
+  color: #dddddd;
 }
 
 .new::after {
