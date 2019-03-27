@@ -184,11 +184,7 @@ a {
   display: none;
 }
 
-.search-bar {
-  position: relative;
-}
-
-.search-bar::after {
+.search-form::after {
   content: "";
   position: absolute;
   right: 0;
@@ -656,6 +652,8 @@ a {
   vertical-align: middle;
   display: inline-block;
 
+  position: relative;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -708,7 +706,6 @@ a {
 .button:active, button:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
 
 .container {
   width: 1200px;
@@ -1224,21 +1221,21 @@ a {
   content: "";
   position: absolute;
   left: 160px;
-  top: 0px;
+  top: 0;
 
   width: 120px;
-  height: 40px;
+  height: 100%;
 
   background-color: #000000;
 }
 
-.services-button:nth-child(2):active::after {
+/* .services-button:nth-child(2):active::after {
   top: 63px;
 }
 
 .services-button:nth-child(3):active::after {
   top: 126px;
-}
+} */
 
 #service-1:checked ~ .services-wrapper label[for="service-1"]::after,
 #service-2:checked ~ .services-wrapper label[for="service-2"]::after,
@@ -1249,24 +1246,30 @@ a {
   top: 0px;
 
   width: 120px;
-  height: 40px;
+  height: 100%;
 
   background-color: #000000;
 }
 
-#service-2:checked ~ .services-wrapper label[for="service-2"]::after {
+/* #service-2:checked ~ .services-wrapper label[for="service-2"]::after {
   top: 63px;
 }
 
 #service-3:checked ~ .services-wrapper label[for="service-3"]::after {
   top: 126px;
-}
+} */
 
 .slide-services {
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
+}
+
+.slide-services h3 {
+  padding: 0;
+  /* margin-bottom: 50px; */
+  line-height: normal;
 }
 
 .slide-services::after {
@@ -2583,3 +2586,4 @@ feedback-name:invalid,
 
 .hidden {
   display: none;
+}
