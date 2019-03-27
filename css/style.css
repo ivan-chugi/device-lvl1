@@ -2048,8 +2048,14 @@ feedback-name:invalid,
           flex-direction: column;
 }
 
-.fieldset::before {
+.fieldset legend {
+  position: relative;
+}
+
+.fieldset legend::before {
   content: "";
+  margin: 0;
+  padding: 0;
   width: 200px;
   height: 2px;
 
@@ -2260,9 +2266,10 @@ feedback-name:invalid,
 .catalog-section {
   padding: 0;
   margin: 0;
-  width: 830px;
   padding-top: 70px;
   padding-left: 70px;
+
+  flex-basis: 830px;
 
   display: -webkit-box;
 
@@ -2286,6 +2293,7 @@ feedback-name:invalid,
   padding: 0;
   margin: 0;
   list-style: none;
+  width: 760px;
 
   display: -webkit-box;
 
@@ -2301,7 +2309,7 @@ feedback-name:invalid,
 }
 
 .catalog-list ul:nth-child(2n) {
-  margin-left: 39px;
+  margin-left: 40px;
 }
 
 .catalog-list-card {
