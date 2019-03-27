@@ -1,27 +1,31 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/gilroylight.woff2") format("woff2");
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -519,6 +523,7 @@ a {
 }
 
 .partners-item {
+  padding-left: 18px;
   font-size: 16px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -785,14 +790,15 @@ a {
           justify-content: space-between;
 }
 
-.site-navigation-list::after {
+.popular-wrapper b::after {
   content: "";
   width: 130px;
   height: 30px;
   margin-right: 12px;
 
   position: absolute;
-  top: 105px;
+  top: -55px;
+  left: 0;
 
   background-image: url("../img/bar-white.png");
   background-repeat: no-repeat;
@@ -1932,7 +1938,7 @@ feedback-name:invalid,
 .sort-price,
 .sort-type,
 .sort-popularity {
-  color: rgba(0 0 0 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sort-price {
@@ -1951,7 +1957,7 @@ feedback-name:invalid,
 .sort-price:hover,
 .sort-type:hover,
 .sort-popularity:hover {
-  color: rgba(0 0 0 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sort-price:active,
@@ -1963,7 +1969,7 @@ feedback-name:invalid,
 .sort-price:visited,
 .sort-type:visited,
 .sort-popularity:visited {
-  color: rgba(0 0 0 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 .arrows {
