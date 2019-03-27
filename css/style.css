@@ -1871,7 +1871,7 @@ feedback-name:invalid,
 
 .filter-title p,
 .sort p {
-  margin: 0;
+  /* margin: 0; */
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -2293,7 +2293,6 @@ feedback-name:invalid,
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 760px;
 
   display: -webkit-box;
 
@@ -2333,6 +2332,7 @@ feedback-name:invalid,
 }
 
 .card-footer {
+  width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2349,7 +2349,6 @@ feedback-name:invalid,
 }
 
 .card-footer a {
-  /* vertical-align: top; */
   letter-spacing: 0.47px;
   line-height: 27px;
 }
