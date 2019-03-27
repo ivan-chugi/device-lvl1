@@ -441,7 +441,7 @@ a {
 .category {
   position: relative;
   display: block;
-  padding-top: 190px;
+  padding-top: 194px;
   width: 160px;
 
   font-family: "Gilroy", "Arial", sans-serif;
@@ -871,13 +871,13 @@ a {
   margin: 0;
   list-style: none;
   min-width: 1160px;
-  margin-bottom: 18px;
+  margin-bottom: 106px;
 
   display: -webkit-box;
 
   display: -ms-flexbox;
 
-  display: flex;
+  display: block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -892,7 +892,7 @@ a {
   padding: 0;
   list-style: none;
 
-  margin-bottom: 90px;
+  /* margin-bottom: 108px; */
 }
 
 .popular-slider-controls label {
@@ -1285,7 +1285,7 @@ a {
 }
 
 .brands {
-  margin-bottom: 89px;
+  margin-bottom: 87px;
 }
 
 .brands-list {
