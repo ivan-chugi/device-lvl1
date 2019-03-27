@@ -454,6 +454,11 @@ a {
   color: #000000;
 }
 
+.category:active,
+.category:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .category::before {
   content: "";
   position: absolute;
@@ -1932,7 +1937,7 @@ feedback-name:invalid,
 .sort-price,
 .sort-type,
 .sort-popularity {
-  color: rgba(0 0 0 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sort-price {
@@ -1951,7 +1956,7 @@ feedback-name:invalid,
 .sort-price:hover,
 .sort-type:hover,
 .sort-popularity:hover {
-  color: rgba(0 0 0 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sort-price:active,
@@ -1963,7 +1968,7 @@ feedback-name:invalid,
 .sort-price:visited,
 .sort-type:visited,
 .sort-popularity:visited {
-  color: rgba(0 0 0 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 .arrows {
