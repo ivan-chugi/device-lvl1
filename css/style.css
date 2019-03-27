@@ -922,6 +922,10 @@ a {
   display: none;
 }
 
+.slide-3 p {
+  max-width: 490px;
+}
+
 #product-1:checked ~ .container #slide-1,
 #product-2:checked ~ .container #slide-2,
 #product-3:checked ~ .container #slide-3 {
